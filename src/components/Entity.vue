@@ -211,4 +211,7 @@ a{
 .editmode > div > label{
   margin-right: 0.5em;
 }
+.editmode > div > input{
+  width: 7em;
+}
 </style>

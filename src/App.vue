@@ -105,9 +105,23 @@ export default {
 }
 .body-wrapper{
   display: grid;
-  grid-template-columns: 33% 33% 33%;
   grid-gap: 2em;
-  width: 80%;
   margin: auto;
 }
+@media only screen and (min-width: 425px) {
+  .body-wrapper{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .body-wrapper{
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .body-wrapper{
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
 </style>
