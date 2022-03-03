@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App).mount('#app')
+
+window.app = app; // Only for debug reasons, delete on build
