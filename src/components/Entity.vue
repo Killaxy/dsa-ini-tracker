@@ -27,7 +27,7 @@
         </div>
         <div>
           <label :for="getLabelIdentifier('currentHp')">Current HP:</label>
-          <input v-model="currentHp" :id="getLabelIdentifier('currentHp')">
+          <input v-model="currentHp" :id="getLabelIdentifier('currentHp')" @change=" (currentHp>maxHp) ?currentHp=maxHp:currentHp">
         </div>
         <div>
           <label :for="getLabelIdentifier('ini')">INI:</label>
@@ -202,6 +202,9 @@ export default {
 .small-input{
   width: 15%;
 }
+a{
+  cursor: pointer;
+}
 .editmode{
   display: flex;
   flex-direction: column;
@@ -221,4 +224,3 @@ export default {
   justify-content: flex-end;
   gap: 0.3em;
 }
-</style>
