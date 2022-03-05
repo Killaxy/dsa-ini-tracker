@@ -123,5 +123,8 @@ export default {
     grid-template-columns: 33% 33% 33%;
   }
 }
+a{
+  cursor: pointer;
+}
 
 </style>
