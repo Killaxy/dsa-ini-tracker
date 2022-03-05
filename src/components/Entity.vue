@@ -22,7 +22,7 @@
         </div>
         <div>
           <label :for="getLabelIdentifier('currentHp')">Current HP:</label>
-          <input v-model="currentHp" :id="getLabelIdentifier('currentHp')">
+          <input v-model="currentHp" :id="getLabelIdentifier('currentHp')" @change=" (currentHp>maxHp) ?currentHp=maxHp:currentHp">
         </div>
         <div>
           <label :for="getLabelIdentifier('ini')">INI:</label>
