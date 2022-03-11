@@ -1,0 +1,19 @@
+name: Feature Request (Neu)
+description: Reiche einen Verbesserungsvorschlag ein
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibe was verbesser werden soll?!
+    validations:
+      required: true
+  - type: dropdown
+    id: version 
+    attributes:
+      label: Um welche Art von Verbesserung handelt es sich?
+      multiple: false
+      options:
+        - Verbesserung einer bestehenden Funktion
+		- Erweiterung einer bestehenden Funktion
+		- Neue Funktion
