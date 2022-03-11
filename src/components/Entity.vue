@@ -52,7 +52,7 @@
           <span>HP:{{currentHp}}/{{maxHp}}</span>
           <div class="flex-center">
             <div class="health-bar" >
-              <div class="bar" :style="{ width: currentHp/maxHp*100 + '%'}">
+              <div class="bar" :style="{ width: currentHp/maxHp*100 + '%', background: currentHpColor()}">
                 <div class="hit"></div>
               </div>
             </div>
@@ -111,6 +111,12 @@ export default {
     },
     persist(){
       console.log("Need to implement");
+    },
+    currentHpColor(){
+      if(this.currentHp < this.maxHp/4)return "rgb(255,0,0)";
+      if(this.currentHp < this.maxHp/3)return "rgb(251 139 43)";
+      if(this.currentHp < this.maxHp/2)return "rgb(255 255 0)";
+      return "#ace145"
     }
   }
 }
@@ -148,7 +154,6 @@ export default {
   position: relative;
 }
 .bar {
-  background: #c54;
   width: 100%;
   height: 15px;
   position: relative;
