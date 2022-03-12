@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Beschreibe was verbesser werden soll?!**
+**Beschreibe was verbessert werden soll?!**
 ```
 ```
 **Um welche Art von Verbesserung handelt es sich?**
