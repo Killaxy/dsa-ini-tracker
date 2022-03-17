@@ -15,5 +15,5 @@ body:
       multiple: false
       options:
         - Verbesserung einer bestehenden Funktion
-		- Erweiterung einer bestehenden Funktion
-		- Neue Funktion
+	- Erweiterung einer bestehenden Funktion
+	- Neue Funktion
