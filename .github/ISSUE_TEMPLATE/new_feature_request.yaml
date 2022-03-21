@@ -1,6 +1,6 @@
 name: Feature Request (Neu)
 description: Reiche einen Verbesserungsvorschlag ein
-labels: ["bug"]
+labels: ["enhancement"]
 body:
   - type: textarea
     id: description
