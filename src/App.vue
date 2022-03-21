@@ -65,10 +65,10 @@ export default {
       this.entities.sort(function (a,b){
         const aIni = a.ini ?? 0
         const bIni = b.ini ?? 0
-        if ( aIni > bIni ){
+        if ( aIni*1 > bIni*1 ){
           return -1;
         }
-        if ( aIni < bIni ){
+        if ( aIni*1 < bIni*1 ){
           return 1;
         }
         return 0;
