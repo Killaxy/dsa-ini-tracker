@@ -59,9 +59,9 @@
                 <div class="hit"></div>
               </div>
             </div>
-            <div class="flex-center" v-if="currentHp>0">
+            <div class="flex-center">
               <input v-model="hit" class="small-input">
-              <button @click="damage()">Hit</button>
+              <button @click="damage()" v-if="currentHp>0">Hit</button>
               <button @click="heal()">Heal</button>
             </div>
           </div>
