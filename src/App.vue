@@ -2,19 +2,20 @@
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <div>
-    <h1>The dark eye battle tracker</h1>
+    <h1>{{ $t('title') }}</h1>
+    <div class="intro" style="margin-bottom: 0;text-align: right ">
+      <Lang/>
+    </div>
     <div class="intro">
       <p>
-        The dark eye battle tracker is a combat tool for the dark eye 4th edition.
+        {{ $t("description.first") }}
         <br/>
-        This tool is to track initiative, hp, and current player/monster in a battle. Because we all know how chaotic/messy a battle can become.
+        {{ $t("description.second") }}
       </p>
       <a href='https://ko-fi.com/C0C3BLUJ9' target='_blank'>
         <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
       </a>
-      <p>
-        Feature ideas an general feedback welcome on <a href="https://github.com/Killaxy/dsa-ini-tracker">Github</a>. 
-        If you like what I do please support me for instance on ko-fi :), thx.
+      <p v-html="$t('description.third', {target: 'https://github.com/Killaxy/dsa-ini-tracker', text: 'Github' })">
       </p>
     </div>
     <div class="controls"></div>
@@ -39,11 +40,13 @@
 
 <script>
 import Entity from './components/Entity'
+import Lang from './components/LangaugeSwitch.vue'
 
 export default {
   name: 'App',
   components: {
-    Entity
+    Entity,
+    Lang
   },
   data(){
     return {
