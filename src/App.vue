@@ -2,6 +2,21 @@
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <div>
+    <h1>The dark eye battle tracker</h1>
+    <div class="intro">
+      <p>
+        The dark eye battle tracker is a combat tool for the dark eye 4th edition.
+        <br/>
+        This tool is to track initiative, hp, and current player/monster in a battle. Because we all know how chaotic/messy a battle can become.
+      </p>
+      <a href='https://ko-fi.com/C0C3BLUJ9' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+      </a>
+      <p>
+        Feature ideas an general feedback welcome on <a href="https://github.com/Killaxy/dsa-ini-tracker">Github</a>. 
+        If you like what I do please support me for instance on ko-fi :), thx.
+      </p>
+    </div>
     <div class="controls"></div>
     <div class="body-wrapper">
       <div v-for="item in entities" :key="item.id">
@@ -15,7 +30,9 @@
                 @attack="attack"
         />
       </div>
-      <a @click="addNew">Add New</a>
+      <div class="game-controls">
+        <a @click="addNew">Add New Player/Monster</a>
+      </div>
     </div>
   </div>
 </template>
@@ -95,6 +112,9 @@ export default {
 </script>
 
 <style>
+body{
+  background: #ebe2d3;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -126,5 +146,19 @@ export default {
 a{
   cursor: pointer;
 }
-
+.intro{
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+.game-controls a{
+    border: solid black;
+    border-radius: 20px;
+    padding: 7px;
+    background: lightgreen;
+}
+.game-controls{
+  margin-top: 1em;
+}
 </style>
