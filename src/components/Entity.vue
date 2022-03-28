@@ -10,9 +10,9 @@
         </a>
       </div>
       <div class="editmode">
-        <div>
-          <label :for="getLabelIdentifier('title')">Name:</label>
-          <input v-model="title" :id="getLabelIdentifier('title')" placeholder="Name ...">
+        <div style="border-bottom: 2px solid; width: 100%">
+          <label style="font-size: 0.8em" :for="getLabelIdentifier('title')">Name:</label>
+          <input class="name" v-model="title" :id="getLabelIdentifier('title')" placeholder="Name ...">
         </div>
         <div>
           <label :for="getLabelIdentifier('maxHP')">Max HP:</label>
@@ -123,6 +123,14 @@ export default {
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+.name{
+  font-family: 'Rock Salt', cursive;
+  width: 100%;
+}
+
 .entity{
   padding: 20px;
   border-radius: 5px;
@@ -207,7 +215,7 @@ a{
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 0.3em;
 }
@@ -219,15 +227,7 @@ a{
 }
 .editmode-controls{
   display: flex;
-  justify-content: flex-end;
-  gap: 0.3em;
-}
-.editmode{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 0.3em;
 }
 .editmode > div > label{
@@ -235,5 +235,9 @@ a{
 }
 .editmode > div > input{
   width: 7em;
+}
+
+html{
+  color: light-brown;
 }
 </style>
