@@ -12,7 +12,7 @@
         "addNew": "Add New Player/Enemy",
         "lock": "lock",
         "remove": "remove",
-        "maxHp": "Max HP",
+        "maxHP": "Max HP",
         "currentHP": "Current HP",
         "ini": "INI",
         "armor": "Armor",

@@ -54,6 +54,9 @@ export default {
       lastId: 0,
     }
   },
+  mounted(){
+    this.$i18n.locale = localStorage.lang;
+  },
   methods: {
     addNew() {
       const entity = {
