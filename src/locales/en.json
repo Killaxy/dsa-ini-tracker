@@ -1,0 +1,28 @@
+{
+    "title": "The dark eye battle tracker",
+    "description":{
+        "first": "The dark eye battle tracker is a combat tool for the dark eye 4th edition.",
+        "second": "This tool is to track initiative, hp, and current player/monster in a battle. Because we all know how chaotic/messy a battle can become.",
+        "third": "Feature ideas an general feedback welcome on <a href='{target}' target='_blank'>{text}</a>. If you like what I do please support me for instance on ko-fi :), thx."
+    },
+    "kofi":{
+        "alt": "Buy Me a Coffee at ko-fi.com"
+    },
+    "game":{
+        "addNew": "Add New Player/Enemy",
+        "lock": "lock",
+        "remove": "remove",
+        "maxHP": "Max HP",
+        "currentHP": "Current HP",
+        "ini": "INI",
+        "armor": "Armor",
+        "parade": "Parade",
+        "attack": "Attack",
+        "unlock": "Unlock",
+        "hp": "HP",
+        "hit": "Hit",
+        "heal": "Heal",
+        "entity": "Entity"
+    },
+    "name": "Name"
+}
