@@ -1,4 +1,6 @@
-# vue_project
+# TDE Battle Tracker
+A simple The Dark Eye Battle Tracker, don't be confused from the repo-name in german the game is called DSA (Das schwarze Auge) :D.
+If you like what I'm doing here, please support me on ko-fi :)
 
 ## Project setup
 ```
