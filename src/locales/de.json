@@ -1,0 +1,28 @@
+{
+    "title": "Das schwarze Auge Kampf-Tracker",
+    "description":{
+        "first": "Das Schwarze Auge Kamp-Tracker ist ein Kampfwerkzeug für das schwarze Auge Edition 4.",
+        "second": "Das Tool dient zur Überwachung der Initiative, der maximalen sowie aktuellen Lebenspunkte aller Spieler und Gegner im Kamp. Wir wissen alle wie chaotisch es im Kamp werden kann und damit der DM nicht die Übersicht verliert, könnt ihr dieses Tool verwenden" ,
+        "third": "Anmerkungen sowie Verbesserungsvorschläge sind gerne willkommen und können unter <a href='{target}' target='_blank'>{text}</a> eingereicht werden. Falls euch dieses Tool gefällt würde ich mich über eure Unterstützung auf ko-fi freuen :)."
+    },
+    "kofi":{
+        "alt": "Kauf mir einen Kaffee auf ko-fi.com"
+    },
+    "game":{
+        "addNew": "Neuen Spieler/Gegner hinzufügen",
+        "lock": "sperren",
+        "remove": "entfernen",
+        "maxHP": "Max Lebenspunkte",
+        "currentHP": "Aktuelle Lebenspunkte",
+        "ini": "INI",
+        "armor": "Rüstung",
+        "parade": "Parade",
+        "attack": "Attacke",
+        "unlock": "Entsperren",
+        "hp": "Lebenspunkte",
+        "hit": "Treffer",
+        "heal": "Heilen",
+        "entity": "Entität"
+    },
+    "name": "Name"
+}

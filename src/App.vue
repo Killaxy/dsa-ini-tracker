@@ -2,6 +2,22 @@
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <div>
+    <h1>{{ $t('title') }}</h1>
+    <div class="intro" style="margin-bottom: 0;text-align: right ">
+      <Lang/>
+    </div>
+    <div class="intro">
+      <p>
+        {{ $t("description.first") }}
+        <br/>
+        {{ $t("description.second") }}
+      </p>
+      <a href='https://ko-fi.com/C0C3BLUJ9' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='{{ $t("kofi.alt") }}' />
+      </a>
+      <p v-html="$t('description.third', {target: 'https://github.com/Killaxy/dsa-ini-tracker', text: 'Github' })">
+      </p>
+    </div>
     <div class="controls"></div>
     <div class="body-wrapper">
       <div v-for="item in entities" :key="item.id">
@@ -15,24 +31,31 @@
                 @attack="attack"
         />
       </div>
-      <a @click="addNew">Add New</a>
+      <div class="game-controls">
+        <a @click="addNew">{{ $t("game.addNew") }}</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Entity from './components/Entity'
+import Lang from './components/LangaugeSwitch.vue'
 
 export default {
   name: 'App',
   components: {
-    Entity
+    Entity,
+    Lang
   },
   data(){
     return {
       entities: [],
       lastId: 0,
     }
+  },
+  mounted(){
+    this.$i18n.locale = localStorage.lang;
   },
   methods: {
     addNew() {
@@ -95,6 +118,9 @@ export default {
 </script>
 
 <style>
+body{
+  background: #ebe2d3;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -126,5 +152,19 @@ export default {
 a{
   cursor: pointer;
 }
-
+.intro{
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+.game-controls a{
+    border: solid black;
+    border-radius: 20px;
+    padding: 7px;
+    background: lightgreen;
+}
+.game-controls{
+  margin-top: 1em;
+}
 </style>
